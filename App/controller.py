@@ -53,5 +53,9 @@ def loadTags(filename):
 
 
 def loadBooksTags(catalog):
-    # TODO: Modificación de Est-1 y Est-2 en el Lab 2
-    pass
+    """
+    Carga todos los tags de los libros del archivo y los agrega a la lista de tags
+    """
+    btfile = cf.data_dir + catalog
+    return model.addBooksTags(btfile)
+
